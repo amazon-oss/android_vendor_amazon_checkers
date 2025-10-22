@@ -6,10 +6,66 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/amazon/checkers
 
 PRODUCT_COPY_FILES += \
+    vendor/amazon/checkers/proprietary/etc/audio_device.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_device.xml \
+    vendor/amazon/checkers/proprietary/lib/libasp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libasp.so \
+    vendor/amazon/checkers/proprietary/lib/libaspclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaspclient.so \
+    vendor/amazon/checkers/proprietary/lib/libsmartvolume.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsmartvolume.so \
     vendor/amazon/checkers/proprietary/vendor/firmware/EEPROM_MT7668.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/EEPROM_MT7668.bin \
     vendor/amazon/checkers/proprietary/vendor/firmware/TxPwrLimit_MT76x8.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/TxPwrLimit_MT76x8.dat \
     vendor/amazon/checkers/proprietary/vendor/firmware/WIFI_RAM_CODE2_SDIO_MT7668.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE2_SDIO_MT7668.bin \
     vendor/amazon/checkers/proprietary/vendor/firmware/WIFI_RAM_CODE_MT7668.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_MT7668.bin \
     vendor/amazon/checkers/proprietary/vendor/firmware/mt7668_patch_e2_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt7668_patch_e2_hdr.bin \
     vendor/amazon/checkers/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/amazon/checkers/proprietary/vendor/lib/hw/audio.primary.mt8163.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt8163.so
+    vendor/amazon/checkers/proprietary/vendor/bin/nvram_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_daemon \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/AFE.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/AFE.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/EQ.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/EQ.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/EQ_100.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/EQ_100.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/EQ_30.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/EQ_30.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/EQ_40.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/EQ_40.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/EQ_60.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/EQ_60.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/EQ_70.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/EQ_70.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/EQ_80.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/EQ_80.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/EQ_90.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/EQ_90.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/MBCL.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/MBCL.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/MBCL_10percent.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/MBCL_10percent.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/MBCL_20percent.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/MBCL_20percent.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/MBCL_VOIP.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/MBCL_VOIP.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/MBCL_default.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/MBCL_default.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/Tap_AEC_mic1.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/Tap_AEC_mic1.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/Tap_AEC_mic2.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/Tap_AEC_mic2.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/UserEQ.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/UserEQ.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/VOIPRxParametricEQ.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/VOIPRxParametricEQ.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/VOIPTxParametricEQ.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/VOIPTxParametricEQ.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/coefs_FBF.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/coefs_FBF.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/coefs_FilterBank_160.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/coefs_FilterBank_160.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/coefs_FilterBank_640.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/coefs_FilterBank_640.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/coefs_FilterBank_AnalysisSynthesis_1024.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/coefs_FilterBank_AnalysisSynthesis_1024.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/coefs_FilterBank_AnalysisSynthesis_1280.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/coefs_FilterBank_AnalysisSynthesis_1280.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/hamming512_earcon.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/hamming512_earcon.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio-algorithms/hanning_320.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio-algorithms/hanning_320.cfg \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
+    vendor/amazon/checkers/proprietary/vendor/etc/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions.xml \
+    vendor/amazon/checkers/proprietary/vendor/lib/hw/audio.primary_amazon.mt8163.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary_amazon.mt8163.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/hw/audio.usb.mt8163.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.mt8163.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libaudiocompensationfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libaudiocomponentengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocomponentengine.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libaudiocustparam.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocustparam.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libaudiodcrflt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodcrflt.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libaudiosetting.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiosetting.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libaudiotoolkit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiotoolkit.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libbessound_hd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libblisrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libblisrc32.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcustom_nvram.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfile_op.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmsbc_mtk.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libmtklimiter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtklimiter.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libmtkplayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkplayer.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libmtkshifter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkshifter.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libnvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libnvram_daemon_callback.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram_daemon_callback.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libnvram_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram_platform.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libnvramagentclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvramagentclient.so \
+    vendor/amazon/checkers/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so
