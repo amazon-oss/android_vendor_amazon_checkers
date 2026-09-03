@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/amazon/checkers
 
 PRODUCT_COPY_FILES += \
+    vendor/amazon/checkers/proprietary/vendor/lib/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameracustom.so \
     vendor/amazon/checkers/proprietary/etc/audio_device.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_device.xml \
     vendor/amazon/checkers/proprietary/lib/libasp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libasp.so \
     vendor/amazon/checkers/proprietary/lib/libaspclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaspclient.so \
