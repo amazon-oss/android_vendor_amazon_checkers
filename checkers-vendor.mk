@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/amazon/checkers
 
 PRODUCT_COPY_FILES += \
+    vendor/amazon/checkers/proprietary/etc/firmware/gt9xx_fw.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/gt9xx_fw.bin \
     vendor/amazon/checkers/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     vendor/amazon/checkers/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
     vendor/amazon/checkers/proprietary/vendor/etc/.tp/thermal.policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.policy.conf \
